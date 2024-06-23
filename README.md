@@ -1,70 +1,154 @@
-# Getting Started with Create React App
+# Projeto Integrador III - Gerenciamento de Recursos Humanos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é parte do Projeto Integrador III, cujo objetivo é desenvolver uma aplicação web para gerenciar informações dos colaboradores de uma instituição. A aplicação foi desenvolvida utilizando React para o frontend e inclui várias páginas para gerenciar diferentes tipos de colaboradores: administrativos, docentes e de apoio.
 
-## Available Scripts
+## Estrutura do Projeto
 
-In the project directory, you can run:
+my-app/
+├── node_modules/
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│ ├── manifest.json
+│ └── logo192.png
+├── src/
+│ ├── components/
+│ │ └── Pessoa.js
+│ ├── pages/
+│ │ └── Home.js
+│ │ └── AdmPage.js
+│ │ └── DocentePage.js
+│ │ └── ApoioPage.js
+│ ├── services/
+│ ├── App.js
+│ ├── styles.css
+├── package.json
+└── README.md
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Home**: Página inicial que exibe informações básicas dos colaboradores.
+- **AdmPage**: Página para gerenciamento de colaboradores administrativos.
+- **DocentePage**: Página para gerenciamento de colaboradores docentes.
+- **ApoioPage**: Página para gerenciamento de colaboradores de apoio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router Dom**: Biblioteca para roteamento no React.
+- **CSS**: Para estilização da aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Executar o Projeto
 
-### `npm run build`
+### Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js instalado
+- Gerenciador de pacotes npm (instalado junto com o Node.js)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Passos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   
+### Instale as dependências:
+npm install
 
-### `npm run eject`
+### Inicie o servidor de desenvolvimento:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Abra o navegador e acesse http://localhost:3000
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Claro, aqui está um exemplo de um arquivo README.md para o seu projeto:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+markdown
+Copiar código
+# Projeto Integrador III - Gerenciamento de Recursos Humanos
 
-## Learn More
+Este projeto é parte do Projeto Integrador III, cujo objetivo é desenvolver uma aplicação web para gerenciar informações dos colaboradores de uma instituição. A aplicação foi desenvolvida utilizando React para o frontend e inclui várias páginas para gerenciar diferentes tipos de colaboradores: administrativos, docentes e de apoio.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Estrutura do Projeto
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+my-app/
+├── node_modules/
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│ ├── manifest.json
+│ └── logo192.png
+├── src/
+│ ├── components/
+│ │ └── Pessoa.js
+│ ├── pages/
+│ │ └── Home.js
+│ │ └── AdmPage.js
+│ │ └── DocentePage.js
+│ │ └── ApoioPage.js
+│ ├── services/
+│ ├── App.js
+│ ├── styles.css
+├── package.json
+└── README.md
 
-### Code Splitting
+markdown
+Copiar código
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Funcionalidades
 
-### Analyzing the Bundle Size
+- **Home**: Página inicial que exibe informações básicas dos colaboradores.
+- **AdmPage**: Página para gerenciamento de colaboradores administrativos.
+- **DocentePage**: Página para gerenciamento de colaboradores docentes.
+- **ApoioPage**: Página para gerenciamento de colaboradores de apoio.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Tecnologias Utilizadas
 
-### Making a Progressive Web App
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router Dom**: Biblioteca para roteamento no React.
+- **CSS**: Para estilização da aplicação.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Como Executar o Projeto
 
-### Advanced Configuration
+### Pré-requisitos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Node.js instalado
+- Gerenciador de pacotes npm (instalado junto com o Node.js)
 
-### Deployment
+### Passos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+Instale as dependências:
 
-### `npm run build` fails to minify
+bash
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bash
+Copiar código
+npm start
+Abra o navegador e acesse http://localhost:3000
+
+Estrutura de Componentes
+Pessoa.js: Componente para exibir informações de um colaborador.
+AdmPage.js: Componente de página para colaboradores administrativos.
+DocentePage.js: Componente de página para colaboradores docentes.
+ApoioPage.js: Componente de página para colaboradores de apoio.
+Autor
+Francisco André Rodrigues Stundiski
+Gabriel Simas Roberto da Silva
+Jeferson Marchetto
+Marcelo Mallon Bastos
+Licença
+Este projeto é licenciado sob os termos da licença MIT.
+
+
+Esse `README.md` cobre a estrutura do projeto, como executar, as funcionalidades e as tecnologias utilizadas. Sinta-se à vontade para adicionar ou modificar qualquer informação conforme necessário.
+
+
+
+
