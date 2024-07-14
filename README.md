@@ -1,57 +1,80 @@
-# Projeto Integrador III - Gerenciamento de Recursos Humanos
+# Projeto Integrador APP
 
-Este projeto é parte do Projeto Integrador III, cujo objetivo é desenvolver uma aplicação web para gerenciar informações dos colaboradores de uma instituição. A aplicação foi desenvolvida utilizando React para o frontend e inclui várias páginas para gerenciar diferentes tipos de colaboradores: administrativos, docentes e de apoio.
+Este projeto é uma aplicação web para cadastro e consulta de pessoas, utilizando React no frontend e Node.js com MySQL no backend.
+
+## Requisitos
+
+- Node.js
+- MySQL
+- npm
+
+## Instalação
+
+### Backend
+
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/JefersonMarchetto/Projeto-IntegradorAPP.git
+    ```
+
+2. Navegue até a pasta do backend e instale as dependências:
+    ```sh
+    cd Projeto-IntegradorAPP/backend
+    npm install
+    ```
+
+3. Configure o banco de dados MySQL:
+    ```sql
+    CREATE DATABASE projeto_integrador;
+
+    USE projeto_integrador;
+
+    CREATE TABLE pessoas (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      nome VARCHAR(255) NOT NULL,
+      cpf VARCHAR(255) NOT NULL,
+      endereco VARCHAR(255) NOT NULL,
+      data_nascimento DATE NOT NULL,
+      cargo VARCHAR(255) NOT NULL
+    );
+    ```
+
+4. Crie um arquivo `.env` na pasta `backend/src` com as seguintes variáveis:
+    ```plaintext
+    DB_HOST=127.0.0.1
+    DB_USER=root
+    DB_PASSWORD=12345
+    DB_DATABASE=projeto_integrador
+    ```
+
+5. Inicie o servidor backend:
+    ```sh
+    cd Projeto-IntegradorAPP/backend
+    node src/index.js
+    ```
+
+### Frontend
+
+1. Navegue até a pasta do frontend e instale as dependências:
+    ```sh
+    cd Projeto-IntegradorAPP/my-app
+    npm install
+    ```
+
+2. Inicie o servidor frontend:
+    ```sh
+    npm start
+    ```
 
 ## Estrutura do Projeto
 
-```plaintext
-my-app/
-├── node_modules/
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   ├── manifest.json
-│   └── logo192.png
-├── src/
-│   ├── components/
-│   │   └── Pessoa.js
-│   ├── pages/
-│   │   └── Home.js
-│   │   └── AdmPage.js
-│   │   └── DocentePage.js
-│   │   └── ApoioPage.js
-│   ├── services/
-│   ├── App.js
-│   ├── styles.css
-├── package.json
-└── README.md
-# Projeto Integrador III - Gerenciamento de Recursos Humanos
+### Backend
 
-Este projeto é parte do Projeto Integrador III, cujo objetivo é desenvolver uma aplicação web para gerenciar informações dos colaboradores de uma instituição. A aplicação foi desenvolvida utilizando React para o frontend e inclui várias páginas para gerenciar diferentes tipos de colaboradores: administrativos, docentes e de apoio.
+- `backend/src/index.js`: Código do servidor backend que gerencia as requisições e interações com o banco de dados.
 
-## Funcionalidades
+### Frontend
 
-- **Home**: Página inicial que exibe informações básicas dos colaboradores.
-- **AdmPage**: Página para gerenciamento de colaboradores administrativos.
-- **DocentePage**: Página para gerenciamento de colaboradores docentes.
-- **ApoioPage**: Página para gerenciamento de colaboradores de apoio.
+- `my-app/src/Cadastro.js`: Página de cadastro de pessoas.
+- `my-app/src/Resultados.js`: Página de resultados de busca.
 
-## Tecnologias Utilizadas
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **React Router Dom**: Biblioteca para roteamento no React.
-- **CSS**: Para estilização da aplicação.
-
-## Como Executar o Projeto
-
-### Pré-requisitos
-
-- Node.js instalado
-- Gerenciador de pacotes npm (instalado junto com o Node.js)
-
-### Passos
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
